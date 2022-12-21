@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          <img id="logo" src="../img/logo1.png" alt="filme" />
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="../index.html">Home</a>
+              </li>
+              <li>
+                <a href="../index.html">All Movies</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="#">Categories +</a>
+                  <div class="dropdown-content">
+                    <a href="../index.html#most-watched">Most Watched</a>
+                    <a href="../index.html#new-releases">New Releases</a>
+                    <a href="../index.html#classic">Classics</a>
+                    <a href="../index.html#oscar-winners">Oscar Winners</a>
+                    <a href="../index.html#surprise-me">Surprise-me!</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <form class="search">
+            <input type="text" placeholder="Search.." aria-label="Seach" />
+            <button class="button-search" type="submit">Search</button>
+          </form>
+          <div class="user">
+            <div class="dropdown">
+              <a href="#">
+                <img src="../img/user.png" href="#" alt="Profile" />
+              </a>
+              <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-singin">
+      <div class="content-signin">
+        <div class="sign-in">
+          <form action="/action_page.php">
+            <label for="fname">Email</label>
+            <input
+              type="text"
+              id="fname"
+              name="email"
+              placeholder="Type your email.."
+            />
+            <label for="password">Type your Password</label>
+            <input
+              type="password"
+              id="lname"
+              name="password"
+              placeholder="Your your password.."
+            />
+            <a href="../index.html"><input type="url" value="Login" /> </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>

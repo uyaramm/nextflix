@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextFlix</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <button class="btnOpenModal" onclick="openModal()">
+      Last days of promotion: Click to know more ..
+    </button>
+    <div class="modal-container">
+      <div class="modal">
+        <h1>Last days to get 50%OFF</h1>
+        <br />
+        <hr />
+        <span>
+          <h2></h2>
+        </span>
+        <hr />
+        <div class="countdown-container">
+          <div class="countdown-el days">
+            <p class="text" id="days">0</p>
+            <span>Days</span>
+          </div>
+          <div class="countdown-el hours">
+            <p class="text" id="hours">0</p>
+            <span>Hours</span>
+          </div>
+          <div class="countdown-el min">
+            <p class="text" id="minutes">0</p>
+            <span>Minutes</span>
+          </div>
+          <div class="countdown-el seconds">
+            <p class="text" id="seconds">0</p>
+            <span>Seconds</span>
+          </div>
+        </div>
+        <hr />
+        <div class="btns">
+          <button class="btnOK" onclick="closeModal()">OK</button>
+          <button class="btnClose" onclick="closeModal()">Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="title">
+          <img id="logo" src="./img/logo1.png" alt="filme" />
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">All Movies</a>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a href="#">Categories +</a>
+                  <div class="dropdown-content">
+                    <a href="#most-watched">Most Watched</a>
+                    <a href="#new-releases">New Releases</a>
+                    <a href="#classic">Classics</a>
+                    <a href="#oscar-winners">Oscar Winners</a>
+                    <a href="#surprise-me">Surprise-me!</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <form class="search">
+            <input type="text" placeholder="Search.." aria-label="Seach" />
+            <button class="button-search" type="submit">Search</button>
+          </form>
+          <div class="user">
+            <div class="dropdown">
+              <a href="#">
+                <img src="./img/user.png" href="#" alt="Profile" />
+              </a>
+              <div class="dropdown-content">
+                <a href="./html/signup.html">Sign Up</a>
+                <a href="./html/login.html">Login</a>
+                <a href="#">Terms&Conditions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="carousel-container">
+          <button class="arrow-left control" aria-label="Previous image">
+            <img src="./img/arrowleft.svg" />
+          </button>
+          <button class="arrow-right control" aria-label="Previous image">
+            <img src="./img/arrowright.svg" />
+          </button>
+          <div class="carousel-wrapper">
+            <div class="gallery">
+              <img
+                src="./img/carousel/avatar.jpg"
+                class="item current-item"
+                width="100%"
+              />
+              <img
+                src="./img/carousel/batman.jpg"
+                class="item item"
+                width="100%"
+              />
+              <img
+                src="./img/carousel/johnwick.jpg"
+                class="item item"
+                width="100%"
+              />
+              <img
+                src="./img/carousel/moonlight.jpg"
+                class="item item"
+                width="100%"
+              />
+              <img
+                src="./img/carousel/prague.jpg"
+                class="item item"
+                width="100%"
+              />
+              <img
+                src="./img/carousel/rogueone.jpg"
+                class="item item"
+                width="100%"
+              />
+              <img
+                src="./img/carousel/sing.jpg"
+                class="item item"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+      <div class="title-category">
+        <h2 id="most-watched">Most Watched</h2>
+      </div>
+      <div class="category">
+        <div class="row">
+          <div class="movie">
+            <a
+              href="https://www.youtube.com/embed/M-SdbKzJpC8?controls=0"
+              target="_blank"
+            >
+              <img src="/img/movie-posters/aliens-poster.jpg" />
+            </a>
+          </div>
+          <div class="movie">
+            <a
+              href="https://www.youtube.com/watch?v=6HhoWiv6QZ8"
+              target="_blank"
+            >
+              <img src="/img/movie-posters/aquaman-poster.jpg" />
+            </a>
+          </div>
+          <div class="movie">
+            <a
+              href="https://www.youtube.com/watch?v=4Uy9BP-7_mI"
+              target="_blank"
+            >
+              <img src="/img/movie-posters/avengers-poster.jpg" />
+            </a>
+          </div>
+          <div class="movie">
+            <a
+              href="https://www.youtube.com/watch?v=8Qn_spdM5Zg"
+              target="_blank"
+            >
+              <img src="/img/movie-posters/badstarwars-poster.jpg" />
+            </a>
+          </div>
+          <div class="movie">
+            <a
+              href="https://www.youtube.com/watch?v=gCcx85zbxz4"
+              target="_blank"
+            >
+              <img src="/img/movie-posters/bladerunner-poster.jpg" />
+            </a>
+          </div>
+          <div class="movie">
+            <a
+              href="https://www.youtube.com/watch?v=YVSjYFfNCp8"
+              target="_blank"
+            >
+              <img src="/img/movie-posters/clint-poster.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="title-category">
+      <h2 id="new-releases">New Releases</h2>
+    </div>
+    <div class="category">
+      <div class="row">
+        <div class="movie">
+          <a href="https://www.youtube.com/watch?v=Rvk1XOJYYfw" target="_blank">
+            <img src="/img/movie-posters/cobain-poster.jpg" />
+          </a>
+        </div>
+        <div class="movie">
+          <a href="https://www.youtube.com/watch?v=QFxN2oDKk0E" target="_blank">
+            <img src="/img/movie-posters/godzilabebado-poster.jpg" />
+          </a>
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/godzilajapanese-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/godzilla-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/godzillakong-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/gundam-poster.jpg" />
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="title-category">
+      <h2 id="classic">Classics</h2>
+    </div>
+    <div class="category">
+      <div class="row">
+        <div class="movie">
+          <a href="https://www.youtube.com/watch?v=Qwe6qXFTdgc" target="_blank">
+            <img src="/img/movie-posters/inception-poster.jpg" />
+          </a>
+        </div>
+        <div class="movie">
+          <a href="https://www.youtube.com/watch?v=8ugaeA-nMTc" target="_blank">
+            <img src="/img/movie-posters/ironman-poster.jpg" />
+          </a>
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/Joker-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/jurassic-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/lionking-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/lotr-poster.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="title-category">
+      <h2 id="oscar-winners">Oscar Winners</h2>
+    </div>
+    <div class="category">
+      <div class="row">
+        <div class="movie">
+          <a href="https://www.youtube.com/watch?v=YWNWi-ZWL3c" target="_blank">
+            <img src="/img/movie-posters/madmax-poster.jpg" />
+          </a>
+        </div>
+        <div class="movie">
+          <a href="https://www.youtube.com/watch?v=nNpvWBuTfrc" target="_blank">
+            <img src="/img/movie-posters/matrix-poster.jpg" />
+          </a>
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/manonaosei-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/panda-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/pulp-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/ragnarok-poster.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="title-category">
+      <h2 id="surprise-me">Surprise Me!!</h2>
+    </div>
+    <div class="category">
+      <div class="row">
+        <div class="movie">
+          <a href="https://www.youtube.com/watch?v=EEsIBYt6tpU" target="_blank">
+            <img src="/img/movie-posters/snatch-poster.jpg" />
+          </a>
+        </div>
+        <div class="movie">
+          <a href="https://www.youtube.com/watch?v=8Qn_spdM5Zg" target="_blank">
+            <img src="/img/movie-posters/starwars-poster.jpg" />
+          </a>
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/starwarsIV-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/starwarsreturn-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/starwarsVII-poster.jpg" />
+        </div>
+        <div class="movie">
+          <img src="/img/movie-posters/Suicidesquad-poster.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="hr">
+      <hr />
+      <div class="footer">
+        <footer id="main-footer">
+          <span>Amanda copyright&copy;2022</span>
+          <span>Leandro Evaristo copyright&copy;2022</span>
+          <span>Uyara M M copyright&copy;2022</span>
+        </footer>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
